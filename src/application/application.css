@@ -8,9 +8,10 @@
 }
 .JFXTextFieldpreguntas{
 	-fx-highlight-text-fill:"#ff4081";
-	-jfx-focus-color:"-jfx-focus-color";
+	-jfx-focus-color:"#757575";
+	-fx-prompt-text-fill: "#757575";
 }
 .button{
 	-fx-text-fill: "#795548";
-	-fx-font-size: 20px;
+	-fx-font-size: 12px;
 }
