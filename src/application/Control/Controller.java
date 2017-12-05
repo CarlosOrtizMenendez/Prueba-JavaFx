@@ -16,6 +16,8 @@ public class Controller{
 	private JFXButton boton;
 	
 	@FXML
+	private JFXButton button;
+	@FXML
 	private void GetStarted(){
 	            try {
 	            	FXMLLoader loader = new FXMLLoader();
@@ -30,5 +32,9 @@ public class Controller{
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+	}
+	@FXML
+	private void exit(){
+		System.exit(0);
 	}
 }
