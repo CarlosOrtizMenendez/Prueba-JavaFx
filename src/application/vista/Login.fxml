@@ -6,14 +6,14 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.Control.Controller">
+<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control.Controller">
    <children>
       <SplitPane dividerPositions="0.5360721442885772" layoutX="130.0" layoutY="116.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -23,34 +23,67 @@
                      <image>
                         <Image url="@assets/images/freesolo.png" />
                      </image>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
                   </ImageView>
                   <JFXButton layoutX="76.0" layoutY="522.0" maxHeight="33.0" maxWidth="90.0" minHeight="33.0" minWidth="90.0" opacity="0.9" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="About Us" textAlignment="CENTER" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="76.0">
                      <font>
                         <Font size="9.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                   <JFXButton layoutX="192.0" layoutY="471.0" opacity="0.9" prefHeight="33.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-border-color: #ffffff; -fx-border-radius: 30;" styleClass="button2" stylesheets="@../application.css" text="SignIn" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="192.0">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
-                  <JFXTextArea editable="false" layoutX="41.0" layoutY="332.0" prefHeight="113.0" prefWidth="284.0" styleClass="JFXTextField" stylesheets="@../application.css" text="Create Your &#10;Own Account" unFocusColor="#795548" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="41.0" />
+                  <JFXTextArea editable="false" focusColor="#405aa800" layoutX="41.0" layoutY="332.0" prefHeight="113.0" prefWidth="284.0" styleClass="JFXTextField" stylesheets="@../application.css" text="Create Your &#10;Own Account" unFocusColor="#78544800" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="41.0" />
                </children>
             </AnchorPane>
           <AnchorPane maxWidth="700.0" minHeight="0.0" minWidth="400.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #D7CCC8;">
                <children>
-                  <JFXTextField alignment="CENTER" layoutX="168.0" layoutY="77.0" prefHeight="61.0" prefWidth="61.0" style="-fx-background-radius: 90;" styleClass="JFXTextField2" stylesheets="@../application.css" text="M" unFocusColor="#ff428400" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="77.0">
+                  <JFXTextField alignment="CENTER" editable="false" focusColor="#405aa800" layoutX="168.0" layoutY="77.0" prefHeight="61.0" prefWidth="61.0" style="-fx-background-radius: 90;" styleClass="JFXTextField2" stylesheets="@../application.css" text="M" unFocusColor="#ff428400" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="77.0">
                      <font>
                         <Font size="36.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
                   </JFXTextField>
-                  <JFXTextField labelFloat="true" layoutX="140.0" layoutY="192.0" promptText="First Name" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="192.0" />
-                  <JFXTextField labelFloat="true" layoutX="139.0" layoutY="202.0" promptText="Last Name" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="232.0" />
-                  <JFXTextField labelFloat="true" layoutX="139.0" layoutY="242.0" promptText="E-mail" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="272.0" />
-                  <JFXPasswordField labelFloat="true" layoutX="128.0" layoutY="324.0" promptText="Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="312.0" />
-                  <JFXPasswordField labelFloat="true" layoutX="139.0" layoutY="322.0" promptText="Repeat Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="352.0" />
-                  <JFXToggleButton layoutX="59.0" layoutY="493.0" prefHeight="47.0" prefWidth="123.0" text="Under 18?" toggleColor="#e7477f" toggleLineColor="#ff4081" unToggleColor="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="250.0" />
-                  <JFXButton fx:id="Boton" layoutX="212.0" layoutY="508.0" onMouseClicked="#GetStarted" style="-fx-border-color: #795548aa; -fx-border-radius: 30;" styleClass="JFXTextField" stylesheets="@../application.css" text="Get Started" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="135.0" />
+                  <JFXTextField labelFloat="true" layoutX="140.0" layoutY="192.0" promptText="First Name" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="192.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></JFXTextField>
+                  <JFXTextField labelFloat="true" layoutX="139.0" layoutY="202.0" promptText="Last Name" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="232.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></JFXTextField>
+                  <JFXTextField labelFloat="true" layoutX="139.0" layoutY="242.0" promptText="E-mail" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="272.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></JFXTextField>
+                  <JFXPasswordField labelFloat="true" layoutX="128.0" layoutY="324.0" promptText="Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="312.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></JFXPasswordField>
+                  <JFXPasswordField labelFloat="true" layoutX="139.0" layoutY="322.0" promptText="Repeat Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="352.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor></JFXPasswordField>
+                  <JFXToggleButton layoutX="59.0" layoutY="493.0" prefHeight="47.0" prefWidth="123.0" text="Under 18?" toggleColor="#e7477f" toggleLineColor="#ff4081" unToggleColor="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="250.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></JFXToggleButton>
+                  <JFXButton fx:id="Boton" layoutX="212.0" layoutY="508.0" onMouseClicked="#GetStarted" style="-fx-border-color: #795548aa; -fx-border-radius: 30;" styleClass="JFXTextField" stylesheets="@../application.css" text="Get Started" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="135.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
                </children>
             </AnchorPane>
         </items>
