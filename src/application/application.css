@@ -1,0 +1,16 @@
+.JFXTextField{
+	-fx-text-fill: white;
+	-fx-font-family: "PoiretOne-Regular.ttf";
+	-fx-font-size: 36px;
+}
+.JFXTextField2{
+	-fx-text-fill: "#ff4081";
+}
+.JFXTextFieldpreguntas{
+	-fx-highlight-text-fill:"#ff4081";
+	-jfx-focus-color:"-jfx-focus-color";
+}
+.button{
+	-fx-text-fill: "#795548";
+	-fx-font-size: 20px;
+}
