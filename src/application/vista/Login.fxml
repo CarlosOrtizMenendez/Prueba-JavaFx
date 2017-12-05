@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
+<AnchorPane minHeight="600.0" minWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.Control.Controller">
    <children>
       <SplitPane dividerPositions="0.5821643286573146" layoutX="130.0" layoutY="116.0" prefHeight="480.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -50,7 +50,7 @@
                   <JFXPasswordField labelFloat="true" layoutX="128.0" layoutY="324.0" promptText="Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="312.0" />
                   <JFXPasswordField labelFloat="true" layoutX="139.0" layoutY="322.0" promptText="Repeat Password" style="-jfx-focus-color: #ff4081;" styleClass="JFXTextFieldpreguntas" stylesheets="@../application.css" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="352.0" />
                   <JFXToggleButton layoutX="59.0" layoutY="493.0" prefHeight="47.0" prefWidth="123.0" text="Under 18?" toggleColor="#e7477f" toggleLineColor="#ff4081" unToggleColor="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="250.0" />
-                  <JFXButton fx:id="Boton" layoutX="212.0" layoutY="508.0" style="-fx-border-color: #795548aa; -fx-border-radius: 30;" styleClass="JFXTextField" stylesheets="@../application.css" text="Get Started" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="135.0" />
+                  <JFXButton fx:id="Boton" layoutX="212.0" layoutY="508.0" onMouseClicked="#GetStarted" style="-fx-border-color: #795548aa; -fx-border-radius: 30;" styleClass="JFXTextField" stylesheets="@../application.css" text="Get Started" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="135.0" />
                </children>
             </AnchorPane>
         </items>
